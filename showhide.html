@@ -19,7 +19,16 @@
 <div class="container">
     <!--This BootStrap class just provides just a basic container for the table-->
     <!--You aren't required to use it.-->
-    <div class="jumbotron">
+    <div class="jumbotron" id="tron">
+        <!--add a Winner or Loser title to the table if the user wins or loses-->
+        <p id="winLose"></p>
+        <!--keep track of how many games the user has lost and how many they have won-->
+        <p id="winLose2" hidden>Win:  <span id="count1"></span>  Lose:  <span id="count2"></span></p>
+        <!--allow the user to choose the background of the table-->
+        <p>Choose your background:</p>
+        <button id="forest">FOREST</button>
+        <button id="sea">SEA</button>
+        <button id="city">CITY</button>
         <!-- This table will hold the target(s) -->
         <table>
             <tr>
@@ -88,6 +97,8 @@
 
         <!-- Setup some basic controls to get number of # targets, display time -->
         <p>
+        <!--Keep track of the number of guesses a user has left-->
+        <p><strong>Number of Clicks Remaining</strong>: <span id="howmanyclicks">-</span></p>
             <label for="numberOfTargets">Number of Targets:</label>
             <input id="numberOfTargets" type="text"/>
 
@@ -96,12 +107,11 @@
 
             <button class="btn btn-primary" id="goGetIt">GO!</button>
         </p>
-
         <script>
 
 <!-- Kick off the game -->
             letsRock();
         </script>
-    </div>
+</div>
 </body>
 </html>

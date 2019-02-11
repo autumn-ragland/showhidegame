@@ -1,11 +1,39 @@
+
 table {
     /* Use whatever background image (or images) you like */
-    background: url("forest-background.jpg") no-repeat;
+   border: 1px solid black;
     table-layout: fixed;
+}
+/*background classes*/
+.back1{
+    border: none;
+    background: url("forest-background.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.back2{
+    border: none;
+    background: url("city.jpg") no-repeat;
+}
+.back3{
+    border: none;
+    background: url("sea.jpg") no-repeat;
 }
 
 /* Set each td size */
 td {
     width: 100px;
     height: 100px;
+}
+/*formatting winner or loser*/
+#winLose{
+    text-align: center;
+}
+
+.targetImg{
+    width: 40px;
+    height: 40px;
+}
+/*formatting  top button*/
+button{
+    margin-bottom: 10px;
 }

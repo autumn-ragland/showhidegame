@@ -24,6 +24,10 @@ Some Ideas:
 #### The starter project includes jQuery and BootStrap, but you can enhance the game using any technology that you wish
 
 ### I IMPLEMENTED THE FOLLOWING NEW FEATURE(S):
+Win/Lose Counter - how many games has the user lost and won
+Background Buttons - change the background of the table
+Number of Clicks Remaining - How many more guesses do they have left
+
 
 
 
